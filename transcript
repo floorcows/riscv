@@ -1,0 +1,23 @@
+# vsim -work riscv c_element_b 
+# Start time: 08:57:20 on Mar 05,2021
+# Loading sv_std.std
+# Loading riscv.c_element_b
+# Loading riscv.c_element_m
+add wave -position end sim:/c_element_b/c_element/*
+run
+run
+run
+run
+wave add riscv
+# No help for wave addcursor available.
+risc add
+# invalid command name "risc"
+add wave riscv
+# ** UI-Msg: (vish-4014) No objects found matching 'riscv'.
+add wave c_element_b/o
+# ** UI-Msg: (vish-4014) No objects found matching 'c_element_b/o'.
+add wave c_element_b
+# ** UI-Msg: (vish-4014) No objects found matching 'c_element_b'.
+list wave
+# wave
+list

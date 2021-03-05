@@ -9,13 +9,14 @@ timeprecision 1ns;
 
 module c_element_b ();
 
-  wire reset;
-  wire in1, in2;
-  wire out;
+  logic reset;
+  logic in1, in2;
+  logic out;
 
-  c_element c_element_t (
-    .rst(reset)
-    .a(in1)
+  c_element_m c_element (
+    .rst(reset),
+    .o(out),
+    .a(in1),
     .b(in2)
   );
 
@@ -33,5 +34,3 @@ module c_element_b ();
   end
 
 endmodule
-
-  

@@ -3,7 +3,7 @@
 * Test file.
 */
 
-module c_element (
+module c_element_m (
   input wire a,
   input wire rst,
   input wire b,
@@ -13,7 +13,7 @@ module c_element (
 always_ff @ (a,b) begin
   if ( 1 == rst ) begin
     o <= 1'b0;
-  end else if
+  end else begin
     case ({a,b})
       2'b00 : o <= 1'b0;
       2'b11 : o <= 1'b1;
@@ -21,4 +21,4 @@ always_ff @ (a,b) begin
   end
 end
 
-endmodule;
+endmodule
