@@ -1,138 +1,60 @@
 m255
 K4
 z2
-!s11f MIXED_VERSIONS
-13
+!s11f vlog 2020.1 2020.02, Feb 28 2020
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
 Z0 d/home/cristiano/Documents/phelma/riscv
-vc_element
-!s105 celement_sv_unit
-DXx4 work 16 celement_sv_unit 0 22 UEHiV>3BhgCW2[SH1m`I40
+vc_element_b
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1614929721
+Z2 !s110 1614937896
 !i10b 1
-!s100 mHfP3VL7h9`f3Eb4[IjmG2
+!s100 z9QVZHkAT?o:3eFD9W4EC2
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IF3Nb8MgR50iGlZhaYT;>73
+IS30DD0Kn_e4LY7n:?aAZ?2
 Z4 VDg1SIo80bB@j0V0VzS_@n1
 S1
 R0
-Z5 w1614929716
-Z6 8rtl/foo/celement.sv
-Z7 Frtl/foo/celement.sv
-!i122 0
-Z8 L0 6 19
-Z9 OV;L;2020.1;71
-r1
-!s85 0
-31
-Z10 !s108 1614929721.000000
-Z11 !s107 bench/c-element.sv|rtl/foo/celement.sv|
-Z12 !s90 -work|riscv/|rtl/foo/celement.sv|bench/c-element.sv|
-!i113 1
-Z13 o-work riscv/
-Z14 tCvgOpt 0
-vc_element_b
-R1
-Z15 !s110 1614930924
-!i10b 1
-!s100 Gc>`42AZe1kkMB_JHaMI13
-R3
-Idc<3gBm3aOA`fTZW64M^43
-R4
-S1
-R0
-w1614930919
+w1614937818
 8bench/c_element_b.sv
 Fbench/c_element_b.sv
-!i122 7
-L0 10 27
-R9
+!i122 6
+L0 8 43
+Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z16 !s108 1614930924.000000
-Z17 !s107 bench/c_element_b.sv|rtl/foo/c_element_m.sv|
-Z18 !s90 -work|riscv/|rtl/foo/c_element_m.sv|bench/c_element_b.sv|
+Z6 !s108 1614937896.000000
+!s107 bench/c_element_b.sv|rtl/foo/c_element_m.sv|
+Z7 !s90 -work|riscv|rtl/foo/c_element_m.sv|bench/c_element_b.sv|
 !i113 1
-R13
-R14
+Z8 o-work riscv
+Z9 tCvgOpt 0
 vc_element_m
 R1
-R15
+R2
 !i10b 1
 !s100 l^]?;fP_gcnSHWBN`R9Yl3
 R3
-IL0?dYfMI0Qd9QC88Wh[4<2
+IWL`5`fT0[KlJ[36jNg5cG0
 R4
 S1
 R0
-w1614930387
-Z19 8rtl/foo/c_element_m.sv
-Z20 Frtl/foo/c_element_m.sv
-!i122 7
+w1614933050
+8rtl/foo/c_element_m.sv
+Frtl/foo/c_element_m.sv
+!i122 6
+L0 6 19
+R5
+r1
+!s85 0
+31
+R6
+Z10 !s107 bench/c_element_b.sv|rtl/foo/c_element_m.sv|
+R7
+!i113 1
 R8
 R9
-r1
-!s85 0
-31
-R16
-R17
-R18
-!i113 1
-R13
-R14
-Xc_element_m_sv_unit
-R1
-!s110 1614930357
-VCV[D][C<Wl2YAKH`NY1oi1
-r1
-!s85 0
-!i10b 1
-!s100 iG8M3YDHg`5lhfobUE9Nh2
-ICV[D][C<Wl2YAKH`NY1oi1
-!i103 1
-S1
-R0
-w1614929824
-R19
-R20
-!i122 4
-Z21 L0 24 0
-R9
-31
-!s108 1614930357.000000
-R17
-R18
-!i113 1
-R13
-R14
-Xcelement_sv_unit
-R1
-R2
-VUEHiV>3BhgCW2[SH1m`I40
-r1
-!s85 0
-!i10b 1
-!s100 z9bjn:Ijb;Sig?54BBf5X3
-IUEHiV>3BhgCW2[SH1m`I40
-!i103 1
-S1
-R0
-R5
-R6
-R7
-!i122 0
-R21
-R9
-31
-R10
-R11
-R12
-!i113 1
-R13
-R14
