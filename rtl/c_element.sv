@@ -1,6 +1,5 @@
 /*
-* First implementation of a C-element
-* Test file.
+* Implementation of a C element
 */
 
 module c_element_m (
