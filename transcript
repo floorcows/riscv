@@ -1,6 +1,44 @@
 # ** Warning: (vsim-8690) Ignoring plusarg '+acc' with -novopt in effect.
-# vsim "+acc" -work riscv c_element_b 
-# Start time: 10:51:43 on Mar 05,2021
+# vsim "+acc" -work riscv c_element_b -do "script/make.do" 
+# Start time: 11:10:34 on Mar 05,2021
 # Loading sv_std.std
 # Loading riscv.c_element_b
 # Loading riscv.c_element_m
+# do script/make.do
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -all
+# End time: 11:11:28 on Mar 05,2021, Elapsed time: 0:00:54
+# Errors: 0, Warnings: 1
