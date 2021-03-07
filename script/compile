@@ -1,0 +1,19 @@
+#!/bin/bash
+
+BENCH_SOURCE="bench/*"
+RTL_SOURCE="rtl/*"
+SCRIPT_PATH=$(dirname $0)
+cd $SCRIPT_PATH/..
+
+if [ $# -eq 0 ]
+then
+    echo "------------------ COMPILE ONLY MODE ---------------"
+    vlog "-work" riscv $BENCH_SOURCE $RTL_SOURCE
+fi
+
+if [ $# -eq 1 ]
+then
+  vlog "-work" riscv $BENCH_SOURCE $RTL_SOURCE
+  vsim "+acc" "-work" riscv "$1" "-do" "script/make.do"
+  rm transcript *.wlf
+fi

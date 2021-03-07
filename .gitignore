@@ -1,7 +1,9 @@
 MiniProjet/
 riscv/
 
-
+*.log
+*.aux
+*.pdf
 *.vsft
 *.wlf
 transcript

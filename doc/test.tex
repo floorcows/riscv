@@ -4,6 +4,50 @@
 
 \begin{document}
 
-test
+\ctikzset{
+  logic ports=ieee,
+  logic ports/scale=0.7,
+}
+
+ \begin{circuitikz}
+      \draw (0,0)
+      to[V,v=$U_q$] (0,2) % The voltage source
+      to[short] (2,2)
+      to[R=$R_1$] (2,0) % The resistor
+      to[short] (0,0);
+  \end{circuitikz}
+
+
+ \begin{circuitikz}
+      \draw (0,0)
+      to[V,v=$U_q$] (0,2) % The voltage source
+      to[short] (2,2)
+      to[R=$R_1$] (2,0) % The resistor
+      to[short] (0,0);
+  \end{circuitikz}
+
+  \begin{circuitikz}
+    \draw
+      (0,0) node[nand port] (a) {}
+      (-2,0) node[left] {$A$} node[circ,left] {} -| node[circ,midway]{} (a.in 1) -| (a.in 2)
+      (a.out) to[short,-*] node[right] {$\neg A$} ++(5mm,0);
+  \end{circuitikz}
+
+%\tikzset{sr-ff/.style={flipflop, flipflop def={
+  %1=S, t2=CP, t3=R, t4={\ctikztextnot{Q}},
+  %6=Q, nd=1}},
+%}
+
+
+%\begin{circuitikz}[]
+
+  %\draw (0,0) node[sr-ff](FF){} (FF.bup)
+  %node[above]{SR-FF};
+
+  %\draw (FF.pin 1) -- ++(-1,0) node[and port,
+    %anchor=out](AND1){}
+      %(FF.pin 3) -- ++(-1,0) node[and port,
+    %anchor=out](AND2){};
+%\end{circuitikz}
 \end{document}
 

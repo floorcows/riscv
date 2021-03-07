@@ -1,4 +1,0 @@
-#!/bin/bash
-vlog -work riscv rtl/foo/* bench/*
-vsim +acc -work riscv c_element_b -do script/make.do 
-rm transcript *.wlf
