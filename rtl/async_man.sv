@@ -1,36 +1,38 @@
-/*
-* Basic asynchronous control module
-*/
+/* Basic asynchronous control module */
 
 module async_man_m
   #(parameter DELAY=10)(
-  input wire in_req,
-  input wire in_ack,
+  input wire left_req_in,
+  output wire left_ack_out,
   input logic reset,
-  output logic out_req,
-  output logic out_ack,
+  input logic set,
+  output logic right_req_out,
+  input logic right_ack_in,
   output logic aclk //Register control signal
 );
 
 
 //Some outputs are connected
-assign out_req = aclk;
+assign left_ack_out = right_req_out;
+assign aclk = right_req_out;
 
 //NOT gate
-not(in_ack,aclk);
+wire muller_in;
+not(right_ack_in,muller_in);
 
 //Basic delay module implementation
 logic delayed_req;
 always @(*) begin
   #(DELAY);
-  delayed_req <= in_req;
+  delayed_req <= left_req_in;
 end
 
 //C element instantiation
 c_element_m c_element_I(
   .a(delayed_req),
-  .b(out_ack),
+  .b(muller_in),
   .rst(reset),
+  .set(set),
   .o(aclk)
 );
 

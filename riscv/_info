@@ -10,7 +10,7 @@ cModel Technology
 Z0 d/home/cristiano/Documents/phelma/riscv
 vasync_man_b
 Z1 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
-Z2 !s110 1615055043
+Z2 !s110 1615195464
 !i10b 1
 !s100 1mjE5F]L6]8Ha_c9`3Fk`0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
@@ -21,15 +21,15 @@ R0
 w1615054996
 8bench/async_man_b.sv
 Fbench/async_man_b.sv
-!i122 21
+!i122 39
 L0 8 35
 Z5 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z6 !s108 1615055042.000000
-!s107 rtl/c_element.sv|rtl/async_man.sv|bench/c_element_b.sv|bench/async_man_b.sv|
-Z7 !s90 -work|riscv|bench/async_man_b.sv|bench/c_element_b.sv|rtl/async_man.sv|rtl/c_element.sv|
+Z6 !s108 1615195464.000000
+!s107 rtl/seq_ctrl.sv|rtl/c_element.sv|rtl/async_man.sv|bench/c_element_b.sv|bench/async_man_b.sv|
+Z7 !s90 -work|riscv|bench/async_man_b.sv|bench/c_element_b.sv|rtl/async_man.sv|rtl/c_element.sv|rtl/seq_ctrl.sv|
 !i113 1
 Z8 o-work riscv
 Z9 tCvgOpt 0
@@ -37,23 +37,23 @@ vasync_man_m
 R1
 R2
 !i10b 1
-!s100 5f4UGK<kN_o1;<SOcT_PY0
+!s100 nFHAbRB[;TeiNB?5LYzAM3
 R3
-I4MK61gz12EWGXmR65Y7mU1
+I<oXO3h8Zof=ia9T4BabEA3
 R4
 S1
 R0
-w1615029473
+w1615190150
 8rtl/async_man.sv
 Frtl/async_man.sv
-!i122 21
-L0 5 34
+!i122 39
+L0 3 38
 R5
 r1
 !s85 0
 31
 R6
-Z10 !s107 rtl/c_element.sv|rtl/async_man.sv|bench/c_element_b.sv|bench/async_man_b.sv|
+Z10 !s107 rtl/seq_ctrl.sv|rtl/c_element.sv|rtl/async_man.sv|bench/c_element_b.sv|bench/async_man_b.sv|
 R7
 !i113 1
 R8
@@ -71,7 +71,7 @@ R0
 w1614937818
 8bench/c_element_b.sv
 Fbench/c_element_b.sv
-!i122 21
+!i122 39
 L0 8 43
 R5
 r1
@@ -87,17 +87,42 @@ vc_element_m
 R1
 R2
 !i10b 1
-!s100 SSm^R[HN<`9>URoGlec5i0
+!s100 nHJlHjzEkY`GPICF`JN[f2
 R3
-Ie4E]JYfJedjTJ@je1KfOI0
+IGD5AT8SLf3gIhALlX[Tmb0
 R4
 S1
 R0
-w1614974551
+w1615189813
 8rtl/c_element.sv
 Frtl/c_element.sv
-!i122 21
-L0 5 19
+!i122 39
+L0 5 24
+R5
+r1
+!s85 0
+31
+R6
+R10
+R7
+!i113 1
+R8
+R9
+vseq_ctrl_m
+R1
+R2
+!i10b 1
+!s100 5ZniFd<WN6bS3aX1KK<e=0
+R3
+I<4EIe1AdI:eXmT397[1z_2
+R4
+S1
+R0
+w1615193758
+8rtl/seq_ctrl.sv
+Frtl/seq_ctrl.sv
+!i122 39
+L0 3 40
 R5
 r1
 !s85 0
