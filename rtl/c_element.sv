@@ -10,7 +10,7 @@ module c_element_m (
   output logic o
 );
 
-always_ff @ (a,b) begin
+always_ff @ (a,b,rst,set) begin
   if ( 1 == rst ) begin
     o <= 1'b0;
   end else begin

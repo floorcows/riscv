@@ -11,21 +11,13 @@ module async_man_m
   output logic aclk //Register control signal
 );
 
+timeunit 1ns;
+timeprecision 100ps;
 
-//Some outputs are connected
-assign left_ack_out = right_req_out;
-assign aclk = right_req_out;
-
-//NOT gate
-wire muller_in;
-not(right_ack_in,muller_in);
-
-//Basic delay module implementation
 logic delayed_req;
-always @(*) begin
-  #(DELAY);
-  delayed_req <= left_req_in;
-end
+
+//not(right_ack_in,muller_in);
+assign muller_in = ~right_ack_in;
 
 //C element instantiation
 c_element_m c_element_I(
@@ -36,5 +28,14 @@ c_element_m c_element_I(
   .o(aclk)
 );
 
+//Some outputs are connected
+assign left_ack_out = aclk;
+assign right_req_out = aclk;
+
+
+//Basic delay module implementation
+always @(left_req_in) begin
+  delayed_req = #(DELAY) left_req_in;
+end
 
 endmodule

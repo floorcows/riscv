@@ -10,20 +10,22 @@ module async_man_b ();
   timeunit 1ns;
   timeprecision 100ps;
 
-  logic reset;
   logic req1;
   logic ack1;
-
   logic req2;
   logic ack2;
+  logic set;
+  logic rst;
+  logic out;
 
   async_man_m async_man(
-    .in_req(req1),
-    .in_ack(ack1),
-    .reset(reset),
-    .out_req(req2),
-    .out_ack(ack2),
-    .aclk()
+    .left_req_in(req1),
+    .left_ack_out(ack1),
+    .right_req_out(req2),
+    .right_ack_in(ack2),
+    .set(set),
+    .reset(rst),
+    .aclk(out)
   );
 
   initial begin
@@ -31,11 +33,16 @@ module async_man_b ();
   end
 
   initial begin
-    reset = 1'b1;
+    rst = 1;
+    set = 0;
+    ack2 = 0;
+    req1 = 0;
+    #(50);
+    rst = 0;
     #(1);
-    reset = 1'b0;
-    #(1);
-
+    req1 = 1;
+    #(5);
+    req1 = 0;
   end
 
 
